@@ -2,4 +2,4 @@
 cd /workspaces/minecraft_server
 
 # RAM moderada para Codespaces
-screen -dmS mc java -Xms8G -Xmx16G -jar ./files/server.jar nogui
+screen -S mc java -Xms8G -Xmx16G -jar ./files/server.jar nogui
