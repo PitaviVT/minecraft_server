@@ -1,31 +1,18 @@
-# minecraft_server
-Pues eso
+# instalar playit en local
 
-# descargar java
-sudo apt update && sudo apt install -y openjdk-21-jre-headless screen wget git
+codespace@codespaces-68b6c3:/workspaces/minecraft_server$ sh playit_install.sh
 
-# descargar version de minecraft
-https://mcversions.net
+# ejecutar playit (abrir tunel previamente configurado)
 
-wget -O server.jar https://piston-data.mojang.com/v1/objects/95495a7f485eedd84ce928cef5e223b757d2f764/server.jar
+https://playit.gg
 
-# iniciar el servidor 
-sh start_server
+codespace@codespaces-68b6c3:/workspaces/minecraft_server$ playit
 
-# poner eula a true
+# crear servidor
 
-echo "eula=true" > eula.txt
+python script
 
-# cambiar de pantalla sin cerrarlo
-Ctrl + A + D -> Pasa de pantalla
+# enjoy ^^
 
-# ver ventana servidor
 
-screen -r mc
 
-# exponer el puerto
-gh codespace ports visibility 25565:public -c $(gh codespace list --json name -q '.[0].name')
-
-# comprobar host
-
-hostname -I
